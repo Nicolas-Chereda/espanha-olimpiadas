@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto";
+    background-color: #f7eee3;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.navbar{
+    margin: 0 auto;
+    background-color: #AA151B;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    height: 100px;
+    margin-bottom: 1%;
+    font-family: 'Baloo Bhaijaan 2';
+    border-radius: 5px;
+}
+
+/*Logo da seleção de futebol da Espanha*/
+.menu-logo{
+    flex: 10%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    max-height: 100%;
+    margin-left: 5%;
+    padding: 10px;
+}
+
+.menu-logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Itens do menu*/
+.navbar ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+}
+
+.menu-itens{
+    flex: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-itens ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.menu-itens a{
+    line-height: 1;
+}
+
+.menu-itens a:hover{
+   color: #1A2D5C;
+   line-height: 1;
+}
+
+
+/*Botão de contato*/
+.menu-contato{
+    margin-right: 5%;
+    flex: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.menu-contato a{
+    border: #FFCC00 3px solid; 
+    border-radius: 100px;
+    padding: 5px 30px 3px;
+}
+
+.menu-contato a:hover{
+    transition: 0.1s ease;
+    background-color: #1A2D5C;
+}
+
+
+/*Página home*/
+.container-home{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.home-frase{
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    flex: 50%;
+    font-size: 18px;
+    margin-right: 5%;
+    color: #1A2D5C;
+}
+
+.home-frase h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 10%;
+    letter-spacing: 3px;
+}
+
+.home-frase h2{
+    font-weight: 800;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.home-frase button{
+    margin-left: 10%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    background-color: #AA151B;
+    font-weight: 800;
+    border: none;
+    box-shadow: 2px 1px 2px #6d0004;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaijaan 2';
+    font-size: 14px;
+}
+
+.home-frase button:hover{
+    background-color: #880005;
+}
+
+.home-image{
+    max-width: 100%;
+    flex: 50%;
+}
+
+.home-image img{
+    width: 100%;
+}
+
+
+/*Página Sobre*/
+.container-900px{
+    padding: 2% 5% 2% 5%;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 900px;
+    background-color: white;
+}
+
+#container-sobre{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+main h2{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-size: 24px;
+}
+
+main p{
+    margin-bottom: 2%;
+}
+
+/*Carrossel*/
+.container-carrossel{
+    position: relative;
+    width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 300px;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide, .slide img {
+    min-width: 100%;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s ease;
+    padding: 10px 10px 0 10px;
+    background-color: rgb(0,0,0,0.3);
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+.container-carrossel .fi{
+    font-size: 50px;
+}
+
+.container-carrossel:hover #prev, .container-carrossel:hover #next{
+    opacity: 1 !important;
+}
+
+/*Página Destaques*/
+
+section ol li{
+    margin-left: 2.5%;
+    margin-bottom: 3%;
+}
+
+.alinha-imagem{
+    margin-top: 3%;
+    width: 100%;
+    text-align: center;
+    color: #B0B0B0;
+    font-size: 12px;
+}
+
+.alinha-imagem img{
+    width: 60%;
+}
+
+h2{
+    margin: 0 auto;
+}
+
+/*Rodapé*/
+footer{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 0 auto;
+    margin-top: 2%;
+    background-color: #AA151B;
+    border-top: #FFCC00 4px solid;
+    padding: 30px;
+    width: 900px;
+}
+
+footer h5{
+    font-family: "Roboto";
+}
+
+
+.ancora{
+    position:fixed;
+    right: 30px;
+    bottom: 30px;
+    text-decoration: none;
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.ancora i{
+    background-color: #e3e3e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 3px 5px 0 5px;
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.ancora i:hover{
+    background-color: #d3d3d3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
