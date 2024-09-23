@@ -14,6 +14,9 @@ body{
     background-color: #f7eee3;
     width: 100vw;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .navbar{
@@ -267,6 +270,127 @@ h2{
     margin: 0 auto;
 }
 
+/*Página Desafios*/
+.jogos-masculino, .jogos-feminino{
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.jogos-masculino article{
+    background-color: #ADD8E6;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 2%;
+}
+
+.jogos-feminino article{
+    background-color: #FFC0CB;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 2%;
+}
+
+.time-1, .time-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+}
+
+.espanha{
+    font-weight: bolder !important; 
+}
+
+.nome1, .nome2{
+    margin-left: 5%;
+    width: 20%;
+}
+
+.nome1 img,.nome2 img{
+    width: 20px;
+    margin-right: 3px;
+}
+
+.gols{
+    display: flex;
+    flex-direction: row; 
+}
+
+/*Página Medalhas*/
+.tabela-tamanho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+.tabela{
+    border: 1px solid #6d0004;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabela .head-tabela{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tabela .head-tabela article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+.tabela .itens-tabela{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tabela .itens-tabela article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.vermelho{
+    background-color: #AA151B;
+}
+
+.azul{
+    background-color: #1A2D5C;
+}
+
+.medalhas-rodape-nao-vai-pro-fim{
+    flex: 70vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.medalhas-rodape-nao-vai-pro-fim h2{
+    font-size: 30px;
+}
+
+
 /*Rodapé*/
 footer{
     border-radius: 5px;
@@ -278,12 +402,18 @@ footer{
     margin-top: 2%;
     background-color: #AA151B;
     border-top: #FFCC00 4px solid;
-    padding: 30px;
+    padding: 20px;
     width: 900px;
 }
 
 footer h5{
     font-family: "Roboto";
+}
+
+.alinha-rodape{
+    height: 100%;
+    display: flex;
+    align-items: end;
 }
 
 
