@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Início</title>
+    <title>Contato</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Veja como foi a seleção da Espanha nas Olímpiadas de futebol.">
+    <meta name="description" content="Entre em contato conosco e avalie nosso site.">
     <meta name="keywords" content="Espanha, Olímpiadas, futebol, campeão do futebol Olímpiadas">
     <link rel="icon" type="image/jpg" href="img/bandeira.png">
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -36,17 +36,37 @@
         </nav>
     </header>
 
+    <div class="container-900px contato">
+        <h2>Contato</h2>
+        <form name="form1" id="form1" method="get" action="#">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
 
-    <div class="container-home">
-        <div class="home-frase">
-            <h3>Espanha nas</h3>
-            <h2>Olímpiadas de futebol</h2>
-            <button onclick="return eventoHome()">Saiba mais</button>
-        </div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
 
-        <div class="home-image">
-            <img src="img/olimpiadas.jpeg">
-        </div>
+            <label for="nota">De uma nota para o Site:</label>
+            <select name="nota" id="nota">
+                <option selected disabled value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <label for="textarea">Deixe aqui seu comentário:</label>
+            <textarea name="textarea" id="textarea"></textarea>
+
+            <input type="submit" onclick="return validar()" value="enviar">
+            <input type="reset" value="limpar">
+
+        </form>
     </div>
 
     <footer>

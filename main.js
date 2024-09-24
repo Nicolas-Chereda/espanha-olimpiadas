@@ -10,7 +10,7 @@ window.onscroll = function() {
   
   function mostrarBotao() {
     const ancora = document.getElementById("ancora");
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.body.scrollTop > 6 || document.documentElement.scrollTop > 6) {
       ancora.style.display = "block";
     } else {
       ancora.style.display = "none";
@@ -70,4 +70,39 @@ prev.addEventListener('click', () => {
 
 // Inicia o carrossel com troca automática de slides
 iniciarTrocaAutomatica();
-  
+
+
+//Função validar formulário
+
+function validar(){
+    var nome = form1.nome.value;
+    var email = form1.email.value;
+    var nota = form1.nota.value;
+
+    if(nome == ""){
+        alert("Preencha o campo 'nome'");
+        form1.nome.focus();
+        return false;
+    }
+
+    if(email == ""){
+        alert("Preencha o campo 'email'");
+        form1.email.focus();
+        return false;
+    }
+
+    if(!email.includes("@")){
+        alert("O email precisa conter '@'");
+        form1.email.focus();
+        return false;
+    }
+
+    if(nota == ""){
+        alert("Preencha o campo 'nota'");
+        form1.nota.focus();
+        return false;
+    }
+
+    form1.reset;
+    alert("Formulário enviado");
+}
